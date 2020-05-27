@@ -8,14 +8,14 @@ const burguer = (props) => {
     .map(igKey => {
       return [...Array(props.ingredients[igKey])].map((_, i) => {
         return  <BurguerIngredient key={igKey + i} type={igKey} />
-      });
+      })
     })
     .reduce((arr, el) => {
       return arr.concat(el);
     }, []);
 
   if (transformIngredients.lenght === 0) {
-    transformIngredients = <p> Please select ingredients.</p>;
+    transformIngredients = <p> Please select ingredients.</p>
   }
 
   return (

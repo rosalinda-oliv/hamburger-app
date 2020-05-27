@@ -8,9 +8,9 @@ class BurguerBuilder extends Component {
 
     state = {
         ingredients: {
-            salad: 1,
-            cheese:1,
-            tofu:1,
+            salad: 0,
+            cheese:0,
+            tofu:0,
             ketchup:0
         }
     }
@@ -36,8 +36,6 @@ class BurguerBuilder extends Component {
         }
         updateIngredients[type] = updateCount;
         this.setState({ingredients:updateIngredients});
-
-        
     }
 
     render () {
