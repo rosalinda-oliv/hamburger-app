@@ -1,17 +1,18 @@
 import React from "react";
 import classes from "./BurguerIngredient.module.css";
-import Aux from "../../../hoc/Auxiliar";
 
 const burguerIngredient = (props) => {
   let ingredient = null;
 
-  switch (props.ingredient) {
-      case "Paocima":
-        ingredient = <div className={classes.BreadTop}>
-            <div className={classes.Seeds1}></div>
-            <div className={classes.Seeds2}></div>
+  switch (props.typeIngredient) {
+    case "bread-top":
+      ingredient = (
+        <div className={classes.BreadTop}>
+          <div className={classes.Seeds1}></div>
+          <div className={classes.Seeds2}></div>
         </div>
-        break;
+      );
+      break;
     case "salad":
       ingredient = <div className={classes.Salad}></div>;
       break;
@@ -24,17 +25,14 @@ const burguerIngredient = (props) => {
     case "ketchup":
       ingredient = <div className={classes.Ketchup}></div>;
       break;
-      case "PaoBaixo":
-        ingredient = <div className={classes.BreadBottom}>
-        </div>
-        break;
+    case "bread-bottom":
+      ingredient = <div className={classes.BreadBottom}></div>;
+      break;
     default:
       ingredient = null;
   }
 
-  return (
-   ingredient
-  );
+  return ingredient;
 };
 
 export default burguerIngredient;
