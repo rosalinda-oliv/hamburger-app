@@ -1,6 +1,6 @@
 import React from 'react';
 
-import classes from './BuildControlls.module.css';
+import classes from './BuildControls.module.css';
 import BuildControl from './BuildControl/BuildControl';
 
 const controls = [
@@ -16,7 +16,7 @@ const buildControls = (props) => (
             return <BuildControl 
             key={ctrl.label}
             added={() => props.ingredientsAdded(ctrl.type)}
-            removed={() => props.ingreditsRemoved(ctrl.type)}
+            removed={() => props.ingredientsRemoved(ctrl.type)}
             label={ctrl.label}
             disabled={props.disabled[ctrl.type]}/>
         })}

@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
+
 import Aux from '../../hoc/Auxiliar';
 import Burguer from '../../components/Burguer/Burguer';
+import BuildControls from '../../components/Burguer/BuildControls/BuildControls';
 
 class BurguerBuilder extends Component {
 
@@ -23,9 +25,9 @@ class BurguerBuilder extends Component {
         this.setState({ingredients:updateIngredients});
     }
 
-    deleteIngredientHandler = (type) => {
+    removeIngredientHandler = (type) => {
         const oldCount = this.state.ingredients[type];
-        if(oldCount < 0){
+        if(oldCount <= 0){
             return;
         }
         const updateCount = oldCount -1;
@@ -38,12 +40,23 @@ class BurguerBuilder extends Component {
         
     }
 
-
     render () {
+        const disabledInfo ={
+            ...this.state.ingredients
+        };
+
+        for(let key in disabledInfo) {
+            disabledInfo[key] = disabledInfo[key] <= 0;
+        }
+
         return (
             <Aux>
                 <Burguer ingredients={this.state.ingredients} />
-                <p> Controlador Hamburguer</p>
+                <BuildControls 
+                ingredientsAdded={this.addIngredientHandler}
+                ingredientsRemoved={this.removeIngredientHandler}
+                disabled={disabledInfo}
+                />
             </Aux>
         )
     }

@@ -5,11 +5,9 @@ import classes from "./Burguer.module.css";
 
 const burguer = (props) => {
   let transformIngredients = Object.keys(props.ingredients)
-    .map((igKey) => {
+    .map(igKey => {
       return [...Array(props.ingredients[igKey])].map((_, i) => {
-        return (
-          <BurguerIngredient ingredient={igKey + i} typeIngredient={igKey} />
-        );
+        return  <BurguerIngredient key={igKey + i} type={igKey} />
       });
     })
     .reduce((arr, el) => {
@@ -22,9 +20,9 @@ const burguer = (props) => {
 
   return (
     <div className={classes.Burguer}>
-      <BurguerIngredient typeIngredient="bread-top" />
+      <BurguerIngredient type="bread-top" />
       {transformIngredients}
-      <BurguerIngredient typeIngredient="bread-bottom" />
+      <BurguerIngredient type="bread-bottom" />
     </div>
   );
 };

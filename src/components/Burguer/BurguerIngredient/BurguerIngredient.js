@@ -4,7 +4,7 @@ import classes from "./BurguerIngredient.module.css";
 const burguerIngredient = (props) => {
   let ingredient = null;
 
-  switch (props.typeIngredient) {
+  switch (props.type) {
     case "bread-top":
       ingredient = (
         <div className={classes.BreadTop}>
