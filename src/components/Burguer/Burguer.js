@@ -14,7 +14,7 @@ const burguer = (props) => {
       return arr.concat(el);
     }, []);
 
-  if (transformIngredients.lenght === 0) {
+  if (transformIngredients.length === 0) {
     transformIngredients = <p> Please select ingredients.</p>
   }
 
