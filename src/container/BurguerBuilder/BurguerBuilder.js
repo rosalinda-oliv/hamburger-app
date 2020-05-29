@@ -3,7 +3,12 @@ import React, {Component} from 'react';
 import Aux from '../../hoc/Auxiliar';
 import Burguer from '../../components/Burguer/Burguer';
 import BuildControls from '../../components/Burguer/BuildControls/BuildControls';
+<<<<<<< HEAD
 import Menu from '../../components/Menu';
+=======
+import Modal from '../../components/UI/Modal/Modal';
+import OrderSummary from '../../components/Burguer/OrderSummary/OrderSummary';
+>>>>>>> eca667fd664e66c072adf05d53b0afa86b92a07c
 
 class BurguerBuilder extends Component {
 
@@ -13,7 +18,8 @@ class BurguerBuilder extends Component {
             cheese:0,
             tofu:0,
             ketchup:0
-        }
+        },
+        purchaseing:false
     }
 
     addIngredientHandler = (type) => {
@@ -39,6 +45,16 @@ class BurguerBuilder extends Component {
         this.setState({ingredients:updateIngredients});
     }
 
+    purchaseHandler = () => {
+        console.log('purchaseHandler');
+this.setState({purchaseing:true})
+    }
+
+
+    purchaseCancelHandler = () => {
+        this.setState({purchaseing:false})
+            }
+
     render () {
         const disabledInfo ={
             ...this.state.ingredients
@@ -50,12 +66,19 @@ class BurguerBuilder extends Component {
 
         return (
             <Aux>
+<<<<<<< HEAD
                 <Menu />
+=======
+                <Modal show={this.state.purchaseing} modelClosed={this.purchaseCancelHandler} >
+                    <OrderSummary purchasedCancelled={this.purchaseCancelHandler} ingredients={this.state.ingredients} />
+                </Modal>
+>>>>>>> eca667fd664e66c072adf05d53b0afa86b92a07c
                 <Burguer ingredients={this.state.ingredients} />
                 <BuildControls 
                 ingredientsAdded={this.addIngredientHandler}
                 ingredientsRemoved={this.removeIngredientHandler}
                 disabled={disabledInfo}
+                ordered={this.purchaseHandler}
                 />
             </Aux>
         )
