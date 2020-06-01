@@ -1,7 +1,9 @@
 .Content {
     margin-top: 10px;
     background-image: url(../../Assets/img/fundo.jpg);
-    background-size: 465px;
+    background-repeat: no-repeat;
+    background-size: 970px;
+    background-color: black;
 }
 
 p {

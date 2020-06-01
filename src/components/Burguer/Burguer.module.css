@@ -4,9 +4,10 @@
     height: 250px;
     text-align: center;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
     overflow-y: scroll;
     padding-top: 3rem;
+    color: white;
 }
 
 @media (min-width: 500px) and (min-height: 400px) {
