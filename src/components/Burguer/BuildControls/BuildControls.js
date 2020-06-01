@@ -8,6 +8,8 @@ const controls = [
     {label: 'Tofu', type: 'tofu'},
     {label: 'Ketchup', type: 'ketchup'},
     {label: 'Cheese', type: 'cheese'},
+    {label: 'AbocadoMayo', type: 'abocadoMayo'},
+    {label: 'Meat', type: 'meat'},
 ]
 
 const buildControls = (props) => (

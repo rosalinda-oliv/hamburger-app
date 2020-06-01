@@ -25,6 +25,12 @@ const burguerIngredient = (props) => {
     case "ketchup":
       ingredient = <div className={classes.Ketchup}></div>;
       break;
+    case "abocadoMayo":
+      ingredient = <div className={classes.AbocadoMayo}></div>;
+      break;
+    case "meat":
+      ingredient = <div className={classes.Meat}></div>;
+      break;
     case "bread-bottom":
       ingredient = <div className={classes.BreadBottom}></div>;
       break;

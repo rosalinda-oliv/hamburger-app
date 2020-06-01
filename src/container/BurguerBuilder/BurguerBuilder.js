@@ -13,7 +13,9 @@ class BurguerBuilder extends Component {
             salad: 0,
             cheese:0,
             tofu:0,
-            ketchup:0
+            ketchup:0,
+            abocadoMayo:0,
+            meat:0,
         },
         purchaseing:false
     }
