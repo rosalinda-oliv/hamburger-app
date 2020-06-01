@@ -1,5 +1,7 @@
 .Content {
     margin-top: 10px;
+    background-image: url(../../Assets/img/fundo.jpg);
+    background-size: 465px;
 }
 
 p {
@@ -7,3 +9,4 @@ p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2em;
 }
+
