@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "244778b8b3ad0ffd68e9a11a91442f37",
+    "revision": "3cf17893fe19cd9abaa6f7ee9e3b235d",
     "url": "/hamburguer-app/index.html"
   },
   {
-    "revision": "959c928d865263f6c4f1",
+    "revision": "7a861acbf75dd4c4016d",
     "url": "/hamburguer-app/static/css/main.47c6f692.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/hamburguer-app/static/js/2.48fc686a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "959c928d865263f6c4f1",
-    "url": "/hamburguer-app/static/js/main.fd9a9d63.chunk.js"
+    "revision": "7a861acbf75dd4c4016d",
+    "url": "/hamburguer-app/static/js/main.dbe82e91.chunk.js"
   },
   {
     "revision": "563418b42d2df0d807c6",

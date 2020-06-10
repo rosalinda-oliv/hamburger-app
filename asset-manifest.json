@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/hamburguer-app/static/css/main.47c6f692.chunk.css",
-    "main.js": "/hamburguer-app/static/js/main.fd9a9d63.chunk.js",
-    "main.js.map": "/hamburguer-app/static/js/main.fd9a9d63.chunk.js.map",
+    "main.js": "/hamburguer-app/static/js/main.dbe82e91.chunk.js",
+    "main.js.map": "/hamburguer-app/static/js/main.dbe82e91.chunk.js.map",
     "runtime-main.js": "/hamburguer-app/static/js/runtime-main.718e0934.js",
     "runtime-main.js.map": "/hamburguer-app/static/js/runtime-main.718e0934.js.map",
     "static/js/2.48fc686a.chunk.js": "/hamburguer-app/static/js/2.48fc686a.chunk.js",
     "static/js/2.48fc686a.chunk.js.map": "/hamburguer-app/static/js/2.48fc686a.chunk.js.map",
     "index.html": "/hamburguer-app/index.html",
-    "precache-manifest.788dc8a890469684ac9e6a6f7d884b23.js": "/hamburguer-app/precache-manifest.788dc8a890469684ac9e6a6f7d884b23.js",
+    "precache-manifest.1e669e81b5407f4ec57e3b44ea7ff90c.js": "/hamburguer-app/precache-manifest.1e669e81b5407f4ec57e3b44ea7ff90c.js",
     "service-worker.js": "/hamburguer-app/service-worker.js",
     "static/css/main.47c6f692.chunk.css.map": "/hamburguer-app/static/css/main.47c6f692.chunk.css.map",
     "static/js/2.48fc686a.chunk.js.LICENSE.txt": "/hamburguer-app/static/js/2.48fc686a.chunk.js.LICENSE.txt",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.718e0934.js",
     "static/js/2.48fc686a.chunk.js",
     "static/css/main.47c6f692.chunk.css",
-    "static/js/main.fd9a9d63.chunk.js"
+    "static/js/main.dbe82e91.chunk.js"
   ]
 }
