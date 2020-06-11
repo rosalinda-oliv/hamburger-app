@@ -8,7 +8,7 @@ const controls = [
     {label: 'Tofu', type: 'tofu'},
     {label: 'Ketchup', type: 'ketchup'},
     {label: 'Cheese', type: 'cheese'},
-    {label: 'AbocadoMayo', type: 'abocadoMayo'},
+    {label: 'AvocadoMayo', type: 'avocadoMayo'},
     {label: 'Meat', type: 'meat'},
 ]
 
