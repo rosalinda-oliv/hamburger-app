@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/hamburguer-app/static/css/main.5ffdac4f.chunk.css",
-    "main.js": "/hamburguer-app/static/js/main.f7ad5613.chunk.js",
-    "main.js.map": "/hamburguer-app/static/js/main.f7ad5613.chunk.js.map",
-    "runtime-main.js": "/hamburguer-app/static/js/runtime-main.718e0934.js",
-    "runtime-main.js.map": "/hamburguer-app/static/js/runtime-main.718e0934.js.map",
-    "static/js/2.e13dd511.chunk.js": "/hamburguer-app/static/js/2.e13dd511.chunk.js",
-    "static/js/2.e13dd511.chunk.js.map": "/hamburguer-app/static/js/2.e13dd511.chunk.js.map",
-    "index.html": "/hamburguer-app/index.html",
-    "precache-manifest.5297720d26bb616a66d8a5daac445535.js": "/hamburguer-app/precache-manifest.5297720d26bb616a66d8a5daac445535.js",
-    "service-worker.js": "/hamburguer-app/service-worker.js",
-    "static/css/main.5ffdac4f.chunk.css.map": "/hamburguer-app/static/css/main.5ffdac4f.chunk.css.map",
-    "static/js/2.e13dd511.chunk.js.LICENSE.txt": "/hamburguer-app/static/js/2.e13dd511.chunk.js.LICENSE.txt",
-    "static/media/burger-logo.png": "/hamburguer-app/static/media/burger-logo.b8503d26.png",
-    "static/media/Layout.module.css": "/hamburguer-app/static/media/fundo.66824e3f.jpg"
+    "main.css": "/hamburger-app/static/css/main.677930be.chunk.css",
+    "main.js": "/hamburger-app/static/js/main.c76f2d60.chunk.js",
+    "main.js.map": "/hamburger-app/static/js/main.c76f2d60.chunk.js.map",
+    "runtime-main.js": "/hamburger-app/static/js/runtime-main.e34de5af.js",
+    "runtime-main.js.map": "/hamburger-app/static/js/runtime-main.e34de5af.js.map",
+    "static/js/2.017f7a09.chunk.js": "/hamburger-app/static/js/2.017f7a09.chunk.js",
+    "static/js/2.017f7a09.chunk.js.map": "/hamburger-app/static/js/2.017f7a09.chunk.js.map",
+    "index.html": "/hamburger-app/index.html",
+    "precache-manifest.e3a3756030ba26495d1001de13b55e5f.js": "/hamburger-app/precache-manifest.e3a3756030ba26495d1001de13b55e5f.js",
+    "service-worker.js": "/hamburger-app/service-worker.js",
+    "static/css/main.677930be.chunk.css.map": "/hamburger-app/static/css/main.677930be.chunk.css.map",
+    "static/js/2.017f7a09.chunk.js.LICENSE.txt": "/hamburger-app/static/js/2.017f7a09.chunk.js.LICENSE.txt",
+    "static/media/burger-logo.png": "/hamburger-app/static/media/burger-logo.b8503d26.png",
+    "static/media/Layout.module.css": "/hamburger-app/static/media/fundo.66824e3f.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.718e0934.js",
-    "static/js/2.e13dd511.chunk.js",
-    "static/css/main.5ffdac4f.chunk.css",
-    "static/js/main.f7ad5613.chunk.js"
+    "static/js/runtime-main.e34de5af.js",
+    "static/js/2.017f7a09.chunk.js",
+    "static/css/main.677930be.chunk.css",
+    "static/js/main.c76f2d60.chunk.js"
   ]
 }
