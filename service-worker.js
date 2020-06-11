@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/hamburguer-app/precache-manifest.7fbcfbf345803b5eefe48c585035b7af.js"
+  "/hamburguer-app/precache-manifest.5297720d26bb616a66d8a5daac445535.js"
 );
 
 self.addEventListener('message', (event) => {

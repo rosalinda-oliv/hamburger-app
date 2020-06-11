@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/hamburguer-app/static/css/main.5ffdac4f.chunk.css",
-    "main.js": "/hamburguer-app/static/js/main.444c91a3.chunk.js",
-    "main.js.map": "/hamburguer-app/static/js/main.444c91a3.chunk.js.map",
+    "main.js": "/hamburguer-app/static/js/main.f7ad5613.chunk.js",
+    "main.js.map": "/hamburguer-app/static/js/main.f7ad5613.chunk.js.map",
     "runtime-main.js": "/hamburguer-app/static/js/runtime-main.718e0934.js",
     "runtime-main.js.map": "/hamburguer-app/static/js/runtime-main.718e0934.js.map",
-    "static/js/2.48fc686a.chunk.js": "/hamburguer-app/static/js/2.48fc686a.chunk.js",
-    "static/js/2.48fc686a.chunk.js.map": "/hamburguer-app/static/js/2.48fc686a.chunk.js.map",
+    "static/js/2.e13dd511.chunk.js": "/hamburguer-app/static/js/2.e13dd511.chunk.js",
+    "static/js/2.e13dd511.chunk.js.map": "/hamburguer-app/static/js/2.e13dd511.chunk.js.map",
     "index.html": "/hamburguer-app/index.html",
-    "precache-manifest.7fbcfbf345803b5eefe48c585035b7af.js": "/hamburguer-app/precache-manifest.7fbcfbf345803b5eefe48c585035b7af.js",
+    "precache-manifest.5297720d26bb616a66d8a5daac445535.js": "/hamburguer-app/precache-manifest.5297720d26bb616a66d8a5daac445535.js",
     "service-worker.js": "/hamburguer-app/service-worker.js",
     "static/css/main.5ffdac4f.chunk.css.map": "/hamburguer-app/static/css/main.5ffdac4f.chunk.css.map",
-    "static/js/2.48fc686a.chunk.js.LICENSE.txt": "/hamburguer-app/static/js/2.48fc686a.chunk.js.LICENSE.txt",
+    "static/js/2.e13dd511.chunk.js.LICENSE.txt": "/hamburguer-app/static/js/2.e13dd511.chunk.js.LICENSE.txt",
     "static/media/burger-logo.png": "/hamburguer-app/static/media/burger-logo.b8503d26.png",
     "static/media/Layout.module.css": "/hamburguer-app/static/media/fundo.66824e3f.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.718e0934.js",
-    "static/js/2.48fc686a.chunk.js",
+    "static/js/2.e13dd511.chunk.js",
     "static/css/main.5ffdac4f.chunk.css",
-    "static/js/main.444c91a3.chunk.js"
+    "static/js/main.f7ad5613.chunk.js"
   ]
 }
