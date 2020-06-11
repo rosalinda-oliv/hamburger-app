@@ -4,6 +4,8 @@ import classes from "./BurguerIngredient.module.css";
 const burguerIngredient = (props) => {
   let ingredient = null;
 
+  
+
   switch (props.type) {
     case "bread-top":
       ingredient = (
@@ -25,8 +27,8 @@ const burguerIngredient = (props) => {
     case "ketchup":
       ingredient = <div className={classes.Ketchup}></div>;
       break;
-    case "abocadoMayo":
-      ingredient = <div className={classes.AbocadoMayo}></div>;
+    case "avocadoMayo":
+      ingredient = <div className={classes.AvocadoMayo}></div>;
       break;
     case "meat":
       ingredient = <div className={classes.Meat}></div>;

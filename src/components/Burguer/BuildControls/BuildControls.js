@@ -8,13 +8,13 @@ const controls = [
     {label: 'Tofu', type: 'tofu'},
     {label: 'Ketchup', type: 'ketchup'},
     {label: 'Cheese', type: 'cheese'},
-    {label: 'AbocadoMayo', type: 'abocadoMayo'},
+    {label: 'AvocadoMayo', type: 'avocadoMayo'},
     {label: 'Meat', type: 'meat'},
 ]
 
 const buildControls = (props) => (
     <div className={classes.BuildControls}>
-        <p> Current price: <strong>{props.price}</strong></p>
+        <p> Current price: <strong>{props.price.toFixed(2)}</strong></p>
         {controls.map( ctrl => {
             return <BuildControl 
             key={ctrl.label}
