@@ -1,5 +1,5 @@
 {
-  "name": "hamburguer-app",
+  "name": "hamburger-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,10 +12,10 @@
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1"
   },
-  "homepage": "http://rosalinda-oliv.github.io/hamburguer-app",
+  "homepage": "http://rosalinda-oliv.github.io/hamburger-app",
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "npm run build",
+    "predeploy": "yarn build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
