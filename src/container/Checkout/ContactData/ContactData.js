@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 
-import Button from "../../../UI/Button/Button";
-import axios from '../../../../axios-order'
-import Spinner from '../../../../components/UI/Spinner/Spinner';
+import Button from "../../../components/UI/Button/Button";
+import axios from '../../../axios-order'
+import Spinner from '../../../components/UI/Spinner/Spinner';
 
 class ContactData extends Component {
     state = {
@@ -14,8 +14,8 @@ class ContactData extends Component {
 
       this.setState({ loading: true });
       const order = {
-        ingredients: this.state.ingredients,
-        price: this.state.price,
+        ingredients: this.props.ingredients,
+        price: this.props.price,
         customer: {
           name: "Rosi",
           address: {
@@ -29,7 +29,7 @@ class ContactData extends Component {
       };
       axios
         .post("/orders.json", order)
-        .then((responde) => {
+        .then((response) => {
           this.setState({ purchaseing: false });
           this.setState({ loading: false });
         })

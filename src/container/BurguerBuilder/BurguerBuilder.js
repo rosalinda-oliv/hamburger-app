@@ -99,36 +99,16 @@ class BurguerBuilder extends Component {
 
   
   purchaseContinue = () => {
-    /*
-    //alert('Purchase continue');
-    this.setState({ loading: true });
-    const order = {
-      ingredients: this.state.ingredients,
-      proce: this.state.totalPrice,
-      customer: {
-        name: "Rosi",
-        address: {
-          street: "dcjd",
-          zipCode: "1111",
-          country: "Portugal",
-        },
-        email: "test@hhh.com",
-      },
-      deliveryMethod: "fastest",
-    };
-    axios
-      .post("/orders.json", order)
-      .then((responde) => {
-        this.setState({ purchaseing: false });
-        this.setState({ loading: false });
-      })
-      .catch((error) => {
-        this.setState({ purchaseing: false });
-        this.setState({ loading: false });
-      });
-       */
-
-       this.props.history.push('/checkout');
+    const queryParams = [];
+    for(let i in this.state.ingredients) {
+      queryParams.push(encodeURIComponent(i) + '=' + encodeURIComponent(this.state.ingredients[i]));
+    }
+    queryParams.push('price=' + this.state.totalPrice);
+    const queryString = queryParams.join('&');
+       this.props.history.push({
+        pathname: '/checkout',
+        search: '?' + queryString 
+       });
   };
 
  

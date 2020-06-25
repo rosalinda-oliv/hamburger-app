@@ -5,16 +5,17 @@ import Button from '../../UI/Button/Button';
 import classes from './CheckoutSummary.module.css';
 
 const checkoutSummary = (props) => {
+    console.log('checkou summary' + JSON.stringify(props.ingredients));
+    
     return(
         <div className={classes.CheckoutSummary}>
             <h1> We hope it tastes well </h1>
         <div style={{width:'100%', margin: 'auto'}}>
-            <Burguer ingredients={props.ingredients} />
+        <Burguer ingredients={props.ingredients} />
         </div>
         <Button buttonType='Danger'
                 clicked={props.checkoutCancelled}
-        > Cancel 
-                
+        > Cancel              
         </Button>
         <Button buttonType='Success'
                 clicked={props.checkoutContinued}
