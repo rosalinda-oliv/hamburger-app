@@ -97,7 +97,9 @@ class BurguerBuilder extends Component {
     this.setState({ purchaseing: false });
   };
 
+  
   purchaseContinue = () => {
+    /*
     //alert('Purchase continue');
     this.setState({ loading: true });
     const order = {
@@ -124,7 +126,12 @@ class BurguerBuilder extends Component {
         this.setState({ purchaseing: false });
         this.setState({ loading: false });
       });
+       */
+
+       this.props.history.push('/checkout');
   };
+
+ 
 
   render() {
     const disabledInfo = {
