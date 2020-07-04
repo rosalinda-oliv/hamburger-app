@@ -16,6 +16,11 @@
     padding-left: 0;
 }
 
+.Button:disabled {
+    color: white;
+    cursor: not-allowed;
+}
+
 .Success {
     color:green
 }
