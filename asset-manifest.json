@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/hamburger-app/static/css/main.677930be.chunk.css",
-    "main.js": "/hamburger-app/static/js/main.c76f2d60.chunk.js",
-    "main.js.map": "/hamburger-app/static/js/main.c76f2d60.chunk.js.map",
+    "main.css": "/hamburger-app/static/css/main.95e3efa3.chunk.css",
+    "main.js": "/hamburger-app/static/js/main.e859dcd4.chunk.js",
+    "main.js.map": "/hamburger-app/static/js/main.e859dcd4.chunk.js.map",
     "runtime-main.js": "/hamburger-app/static/js/runtime-main.e34de5af.js",
     "runtime-main.js.map": "/hamburger-app/static/js/runtime-main.e34de5af.js.map",
-    "static/js/2.017f7a09.chunk.js": "/hamburger-app/static/js/2.017f7a09.chunk.js",
-    "static/js/2.017f7a09.chunk.js.map": "/hamburger-app/static/js/2.017f7a09.chunk.js.map",
+    "static/js/2.86fee8db.chunk.js": "/hamburger-app/static/js/2.86fee8db.chunk.js",
+    "static/js/2.86fee8db.chunk.js.map": "/hamburger-app/static/js/2.86fee8db.chunk.js.map",
     "index.html": "/hamburger-app/index.html",
-    "precache-manifest.e3a3756030ba26495d1001de13b55e5f.js": "/hamburger-app/precache-manifest.e3a3756030ba26495d1001de13b55e5f.js",
+    "precache-manifest.d10b814ac9c0d41a943689d6a1157f4d.js": "/hamburger-app/precache-manifest.d10b814ac9c0d41a943689d6a1157f4d.js",
     "service-worker.js": "/hamburger-app/service-worker.js",
-    "static/css/main.677930be.chunk.css.map": "/hamburger-app/static/css/main.677930be.chunk.css.map",
-    "static/js/2.017f7a09.chunk.js.LICENSE.txt": "/hamburger-app/static/js/2.017f7a09.chunk.js.LICENSE.txt",
+    "static/css/main.95e3efa3.chunk.css.map": "/hamburger-app/static/css/main.95e3efa3.chunk.css.map",
+    "static/js/2.86fee8db.chunk.js.LICENSE.txt": "/hamburger-app/static/js/2.86fee8db.chunk.js.LICENSE.txt",
     "static/media/burger-logo.png": "/hamburger-app/static/media/burger-logo.b8503d26.png",
     "static/media/Layout.module.css": "/hamburger-app/static/media/fundo.66824e3f.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.e34de5af.js",
-    "static/js/2.017f7a09.chunk.js",
-    "static/css/main.677930be.chunk.css",
-    "static/js/main.c76f2d60.chunk.js"
+    "static/js/2.86fee8db.chunk.js",
+    "static/css/main.95e3efa3.chunk.css",
+    "static/js/main.e859dcd4.chunk.js"
   ]
 }

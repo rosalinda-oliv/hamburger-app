@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9dc101a5217a3b78eaeda6776d203ada",
+    "revision": "2c604d63055440661ce7e89fbed2e17b",
     "url": "/hamburger-app/index.html"
   },
   {
-    "revision": "9530878cc09d8d4899bc",
-    "url": "/hamburger-app/static/css/main.677930be.chunk.css"
+    "revision": "64b7914bdfedf3ab51db",
+    "url": "/hamburger-app/static/css/main.95e3efa3.chunk.css"
   },
   {
-    "revision": "5b479088b27ee389a81c",
-    "url": "/hamburger-app/static/js/2.017f7a09.chunk.js"
+    "revision": "d3ec40ec7d388c95e2f5",
+    "url": "/hamburger-app/static/js/2.86fee8db.chunk.js"
   },
   {
-    "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/hamburger-app/static/js/2.017f7a09.chunk.js.LICENSE.txt"
+    "revision": "c64c486544348f10a6d6c716950bc223",
+    "url": "/hamburger-app/static/js/2.86fee8db.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9530878cc09d8d4899bc",
-    "url": "/hamburger-app/static/js/main.c76f2d60.chunk.js"
+    "revision": "64b7914bdfedf3ab51db",
+    "url": "/hamburger-app/static/js/main.e859dcd4.chunk.js"
   },
   {
     "revision": "31f3e40d1fd5f13c679c",
