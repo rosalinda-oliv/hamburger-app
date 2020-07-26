@@ -4,7 +4,7 @@ import classes from './Order.module.css';
 const order = (props) => {
 	console.log('order' + JSON.stringify(props.ingredients));
     
-	const ingredients = []
+	const ingredients = [];
 	for(let ingredientName in props.ingredients) {
 		ingredients.push({
 			name: ingredientName,
@@ -28,7 +28,7 @@ const order = (props) => {
 			{ingredientOutput}
 			<p> Price: <strong> USD {Number.parseFloat(props.price.toFixed(2))}</strong></p>
 		</div>
-	)
-}
+	);
+};
 
 export default order;
