@@ -17,7 +17,6 @@ class Checkout extends Component {
 
     render() {
        // console.log('state ingredients' + JSON.stringify(this.state.ingredients));
-        
         return(
             <div>
                 <CheckoutSummary 
@@ -32,8 +31,6 @@ class Checkout extends Component {
             </div>
         )
     }
-
-
 }
 
 const mapStateToProps = state => {

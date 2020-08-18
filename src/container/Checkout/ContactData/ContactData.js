@@ -7,6 +7,7 @@ import axios from '../../../axios-order'
 import Spinner from '../../../components/UI/Spinner/Spinner';
 import Input from '../../../components/UI/Input/Input';
 import classes from './ContactData.module.css';
+import withErrorHandler from '../../../hoc/withErrorHandler/withErrorHandler';
 
 class ContactData extends Component {
     state = {
@@ -15,7 +16,7 @@ class ContactData extends Component {
                 elementType: 'input',
                 elementConfig: {
                     type: 'text',
-                    placeholder: 'your name'
+                    placeholder: 'Your name'
                 },
                 value:'',
                 validation: {
@@ -28,7 +29,7 @@ class ContactData extends Component {
                 elementType: 'input',
                 elementConfig: {
                     type: 'text',
-                    placeholder: 'street'
+                    placeholder: 'Street'
             },
                 value:'',
                 validation: {
@@ -41,13 +42,14 @@ class ContactData extends Component {
                 elementType: 'input',
                 elementConfig: {
                     type:'text',
-                    placeholder: 'zip code'
+                    placeholder: 'ZIP code'
                 },
                 value:'',
                 validation: {
                     required: true,
                     minlength: 5,
-                    maxlength: 5
+                    maxlength: 5,
+                    isNumeric: true
                 },
                 valid: false,
                 touched: false
@@ -69,11 +71,12 @@ class ContactData extends Component {
                 elementType: 'input',
                 elementConfig: {
                     type: 'email',
-                    placeholder: 'Your email'
+                    placeholder: 'Your e-mail'
                 },
                 value: '',
                 validation: {
-                    required: true
+                    required: true,
+                    isEmail: true
                 },
                 valid: false,
                 touched: false
@@ -82,11 +85,11 @@ class ContactData extends Component {
                 elementType: 'select',
                 elementConfig: {
                    options: [
-                       {value: 'fastest', displayValue:'fastest'},
-                       {value: 'fa', displayValue:'fastest'},
+                       {value: 'fastest', displayValue:'Fastest'},
+                       {value: 'cheapest', displayValue:'Cheapest'},
                    ]
                 },
-                value: 'fastest',
+                value: '',
                 validation:{},
                 valid: true,
                 touched: false
@@ -113,6 +116,16 @@ class ContactData extends Component {
         if( rules.maxLength && isValid ) {
             isValid = value.length <= rules.maxLength;
         }
+
+        if (rules.isEmail) {
+            const pattern = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
+            isValid = pattern.test(value) && isValid
+        }
+
+        if (rules.isNumeric) {
+            const pattern = /^\d+$/;
+            isValid = pattern.test(value) && isValid
+        }
         return isValid;
     }
 
@@ -137,7 +150,7 @@ class ContactData extends Component {
 
   orderHandler = (event) => {
       event.preventDefault();
-      this.setState({ loading: true });
+
       const formData = {};
       for(let formElementIdentifier in this.state.orderForm) {
           formData[formElementIdentifier] = this.state.orderForm[formElementIdentifier].value;
@@ -148,18 +161,6 @@ class ContactData extends Component {
         orderData: formData
       };
       console.log(formData)
-      axios
-        .post("/orders.json", order)
-        .then((response) => {
-          this.setState({ purchaseing: false });
-          this.setState({ loading: false });
-
-          this.props.history.push('/')
-        })
-        .catch((error) => {
-          this.setState({ purchaseing: false });
-          this.setState({ loading: false });
-        });
   }
 
   render() {
@@ -207,5 +208,11 @@ const mapStateToProps = state => {
     }
 }
 
-export default connect(mapStateToProps)(withRouter(ContactData));
+const mapDispatchToProps = dispatch => {
+    oneOrderBurger: () => dispatch();
+
+
+}
+
+export default connect(mapStateToProps)(withErrorHandler(ContactData, axios));
 
