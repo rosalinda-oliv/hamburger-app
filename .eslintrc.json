@@ -22,6 +22,7 @@
         "react"
     ],
     "rules": {
+        "no-case-declarations": "off",
         "react/prop-types": "off",
         "indent": [
             "error",

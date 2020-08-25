@@ -97,7 +97,6 @@ class ContactData extends Component {
             }
         },
         formIsValid: false,
-        loading:false
     }
 
     checkValidity(value, rules) {
@@ -190,7 +189,7 @@ class ContactData extends Component {
         <Button buttonType="Success" disabled={!this.state.formIsValid}> Order </Button>
       </form>
       )
-      if(this.state.loading) {
+      if(this.props.loading) {
           form = <Spinner/>
       }
 
@@ -206,13 +205,16 @@ class ContactData extends Component {
 const mapStateToProps = state => {
     return {
         ings: state.ingredients,
-        price: state.totalPrice
+        price: state.totalPrice,
+        loading: state.loading,
     }
-}
+};
 
 const mapDispatchToProps = dispatch => {
-    oneOrderBurger: (orderData) => dispatch(actions.purchaseBurgerStart(orderData));
-}
+    return {
+        oneOrderBurger: (orderData) => dispatch(actions.purchaseBurger(orderData)),
+    };
+};
 
 export default connect(mapStateToProps)(withErrorHandler(ContactData, axios));
 
