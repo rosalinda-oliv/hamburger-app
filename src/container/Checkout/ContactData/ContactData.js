@@ -90,7 +90,7 @@ class ContactData extends Component {
                        {value: 'cheapest', displayValue:'Cheapest'},
                    ]
                 },
-                value: '',
+                value: 'fastest',
                 validation:{},
                 valid: true,
                 touched: false
@@ -150,7 +150,7 @@ class ContactData extends Component {
 
   orderHandler = (event) => {
       event.preventDefault();
-
+      this.setState( { loading: true } );
       const formData = {};
       for(let formElementIdentifier in this.state.orderForm) {
           formData[formElementIdentifier] = this.state.orderForm[formElementIdentifier].value;
@@ -161,7 +161,14 @@ class ContactData extends Component {
         orderData: formData
       };
       //console.log(formData)
-      this.props.onOrderBurger(order);
+      axios.post( '/orders.json', order )
+          .then( response => {
+              this.setState( { loading: false } );
+              this.props.history.push( '/' );
+          } )
+          .catch( error => {
+              this.setState( { loading: false } );
+          } );
   }
 
   render() {
@@ -204,9 +211,9 @@ class ContactData extends Component {
 
 const mapStateToProps = state => {
     return {
-        ings: state.ingredients,
-        price: state.totalPrice,
-        loading: state.loading,
+        ings: state.burgerBuilder.ingredients,
+        price: state.burgerBuilder.totalPrice,
+        loading: state.order.loading,
     }
 };
 
