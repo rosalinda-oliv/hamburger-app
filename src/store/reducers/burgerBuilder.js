@@ -39,7 +39,8 @@ const burgerBuilder = (state = initialState, action) => {
 		return {
 			...state,
 			ingredients: action.ingredients,
-			error: false
+			error: false,
+			totalPrice: 3
 		};
 	case actionTypes.FETCH_INGREDIENT_FAILED:
 		return {
